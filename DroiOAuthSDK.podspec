@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = "DroiOAuthSDK"
-s.version          = "0.0.1"
+s.version          = "0.0.2"
 s.summary          = "卓易授权"
 s.description      = "帮助开发者快速接入卓易账号"
 s.homepage         = "https://github.com/DroiBaaS"
