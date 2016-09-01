@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/DroiOAuth.h</key>
 		<data>
-		8gSvZXPcY3RpA+4NrrX76LnYa/0=
+		RHiG+5jPDeuu3d0Q76GGKh2Tblk=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -23,11 +23,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8gSvZXPcY3RpA+4NrrX76LnYa/0=
+			RHiG+5jPDeuu3d0Q76GGKh2Tblk=
 			</data>
 			<key>hash2</key>
 			<data>
-			chOyj7lTM8M3LD7GXZGw6m3N5jFCEyPDiSuUOAffb5Q=
+			/qxIYD3rdBDGZEZQjMXt5qw/RLbAN1hVRFSqkOcWAiQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

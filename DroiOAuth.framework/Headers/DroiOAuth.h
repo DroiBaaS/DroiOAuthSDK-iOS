@@ -25,27 +25,40 @@ typedef NS_OPTIONS(NSUInteger, DroiOAuthScope) {
 };
 @interface DroiOAuth : NSObject
 
+
 /**登录接口
  *  @param viewController 调用接口的viewController
- *  @param callback       回调block
+ *  @param callback       回调Token数据
  */
-+ (void)loginWithViewController:(UIViewController *)viewController Callback:(DroiOAuthResultBlock)callback;
-
++ (void)requestTokenWithViewController:(UIViewController *)viewController Callback:(DroiOAuthResultBlock)callback;
 /**
  *  获取用户信息接口
  *
  *  @param token    通过登录接口返回的token
+ *  @param openId   通过登录接口返回的openId
  *  @param scope    需要获取的数据scope
  *  @param callback 回调用户数据
  */
-+ (void)getUserInfoWithToken:(NSDictionary *)token Scope:(DroiOAuthScope)scope Callback:(DroiOAuthResultBlock)callback;
++ (void)getUserInfoWithToken:(NSString *)token  openId:(NSString *)openId Scope:(DroiOAuthScope)scope Callback:(DroiOAuthResultBlock)callback;
 
-+ (void)getUserInfoWithToken:(NSDictionary *)token Callback:(DroiOAuthResultBlock)callback;
++ (void)getUserInfoWithToken:(NSString *)token  openId:(NSString *)openId Callback:(DroiOAuthResultBlock)callback;
 
+/**
+ *  验证Token有效性
+ */
++ (void)checkTokenExpire:(NSString *)token Callback:(DroiOAuthResultBlock)callback;
 
+/**
+ *  设置语言
+ */
 + (void)setLanguage:(DroiOAuthLanguage)language;
 
-
+/**
+ *  Log 开关
+ */
 + (void)setLogEnabled:(BOOL)enabled;
+
+
+
 
 @end
