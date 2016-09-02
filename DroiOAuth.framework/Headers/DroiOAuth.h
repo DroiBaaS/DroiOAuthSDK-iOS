@@ -58,7 +58,4 @@ typedef NS_OPTIONS(NSUInteger, DroiOAuthScope) {
  */
 + (void)setLogEnabled:(BOOL)enabled;
 
-
-
-
 @end
