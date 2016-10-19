@@ -44,18 +44,25 @@ typedef NS_OPTIONS(NSUInteger, DroiOAuthScope) {
 + (void)getUserInfoWithToken:(NSString *)token  openId:(NSString *)openId Callback:(DroiOAuthResultBlock)callback;
 
 /**
- *  验证Token有效性
+ 验证Token有效性
  */
 + (void)checkTokenExpire:(NSString *)token Callback:(DroiOAuthResultBlock)callback;
 
 /**
- *  设置语言
+ 设置语言
  */
 + (void)setLanguage:(DroiOAuthLanguage)language;
 
 /**
- *  Log 开关
+  Log 开关
  */
 + (void)setLogEnabled:(BOOL)enabled;
+
+
+/**
+ 获取SDK 版本号
+ */
++ (NSString *)getVersion;
+
 
 @end
